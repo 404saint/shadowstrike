@@ -6,7 +6,7 @@ It works in **two modes**:
 - **Online mode** using live Shodan data
 - **Offline mode** using user‑supplied JSON datasets
 
-Once assets are loaded, ShadowStrike applies the same analysis pipeline to both modes, producing **explainable risk scores**, **Shadow IT indicators**, and **professional reports** (JSON, Markdown, HTML).
+Once assets are loaded, SurfaceLens applies the same analysis pipeline to both modes, producing **explainable risk scores**, **Shadow IT indicators**, and **professional reports** (JSON, Markdown, HTML).
 
 ---
 
@@ -18,7 +18,7 @@ Modern organizations often lose visibility over:
 - High‑risk services accidentally left public
 - Shadow IT infrastructure hiding in plain sight
 
-ShadowStrike was built to answer one question:
+SurfaceLens was built to answer one question:
 
 > **“If I were an attacker, what would I see — and which assets would matter most?”**
 
