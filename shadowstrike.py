@@ -1,9 +1,9 @@
-# ShadowStrike – Passive Attack Surface & Shadow IT Intelligence Engine (Online + Offline)
+# SurfaceLens – Passive Attack Surface & Shadow IT Intelligence Engine (Online + Offline)
 # Author: RUGERO Tesla (404saint)
 # License: MIT
 
 """
-ShadowStrike is a passive attack surface and Shadow IT intelligence engine.
+SurfaceLens is a passive attack surface and Shadow IT intelligence engine.
 It supports:
 - Online mode (live Shodan API)
 - Offline mode (user-supplied JSON datasets)
@@ -213,14 +213,14 @@ def generate_report(assets, fmt):
     )
 
     if fmt == "json":
-        out = f"shadowstrike_results_{ts}.json"
+        out = f"surfacelens_results_{ts}.json"
         with open(out, "w") as f:
             json.dump({"summary": summary, "assets": assets}, f, indent=2)
 
     elif fmt == "md":
-        out = f"shadowstrike_results_{ts}.md"
+        out = f"surfacelens_results_{ts}.md"
         with open(out, "w") as f:
-            f.write("# ShadowStrike Report\n\n")
+            f.write("# SurfaceLens Report\n\n")
             f.write(f"Generated (UTC): {ts}\n\n")
             f.write("## Executive Summary\n\n")
             f.write(summary + "\n")
@@ -235,10 +235,10 @@ def generate_report(assets, fmt):
                 f.write("\n---\n\n")
 
     elif fmt == "html":
-        out = f"shadowstrike_results_{ts}.html"
+        out = f"surfacelens_results_{ts}.html"
         with open(out, "w") as f:
-            f.write("<html><head><title>ShadowStrike Report</title></head><body>")
-            f.write(f"<h1>ShadowStrike Report</h1><p>Generated (UTC): {ts}</p>")
+            f.write("<html><head><title>SurfaceLens Report</title></head><body>")
+            f.write(f"<h1>SurfaceLens Report</h1><p>Generated (UTC): {ts}</p>")
             f.write("<h2>Executive Summary</h2><pre>" + summary + "</pre>")
             for a in assets:
                 f.write(f"<h3>{a['ip']}:{a['port']}</h3>")
@@ -260,7 +260,7 @@ def generate_report(assets, fmt):
 # MAIN
 # =========================
 def main():
-    print("\n=== ShadowStrike ===")
+    print("\n=== SurfaceLens ===")
 
     print("\nSelect execution mode:")
     print("1) Online (Live Shodan API)")
