@@ -179,6 +179,15 @@ This makes the output suitable for:
 
 ---
 
+### Example: Offline Analysis & Report Generation
+
+The screenshot below shows ShadowStrike running in offline mode using a JSON dataset
+and generating a Markdown report.
+
+![ShadowStrike Offline Mode](screenshots/offline_markdown_report.png)
+
+---
+
 ## Ethical Use & Disclaimer
 
 ShadowStrike is a **defensive, passive analysis tool**.
